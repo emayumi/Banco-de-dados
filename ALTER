@@ -1,0 +1,9 @@
+-- exemplos de alteração de colunas --
+alter table aluno add cpf varchar(11);
+-- irá adicionar a coluna cpf que antes não existia --
+alter table aluno add cpf varchar(11) after sexo;
+-- irá determinar a localização da coluna, adicionando-a após a coluna sexo --
+alter table aluno modify column cpf varchar(14);
+-- de 11 caracteres a coluna cpf passará a ter 14 --
+alter table aluno drop column cpf;
+-- irá remover a coluna e seus registros da tabela --
