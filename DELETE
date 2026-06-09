@@ -1,0 +1,5 @@
+- exemplo de exclusão de dados em uma tabela --
+DELETE FROM aluno WHERE ativo_sn = 0;
+-- irá deletar todos os alunos inativos --
+DELETE FROM aluno WHERE idade <= 30 OR ativo_sn = 0;
+-- irá deletar qual coluna tiver informação verdadeira, pode ser apenas uma ou ambas --
