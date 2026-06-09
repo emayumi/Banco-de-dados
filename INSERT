@@ -4,8 +4,8 @@ use faculdade;
 
 INSERT INTO aluno(
 idade, valor_pago_curso, ativo_sn, data_inscricao,
-endereco, telefone, sexo
+nome, endereco, telefone, sexo
 )VALUES(
 23, 420.00, 1, '2025-01-12',
-'São Paulo, Brasil', '11 77777-7777', 'F'
+'Ellen', 'São Paulo, Brasil', '11 77777-7777', 'F'
 )
