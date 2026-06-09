@@ -1,0 +1,20 @@
+-- exemplos com SELECT --
+SELECT * FROM aluno;
+-- insere todas as colunas da tabela --
+SELECT sexo FROM aluno WHERE sexo = 'F';
+-- irá retornar todas as colunas que apresentam alunas do sexo feminino --
+SELECT * FROM aluno WHERE sexo = 'M' OR idade >= 40;
+-- retorna todas as colunas em que a informação seja verdadeira, pode ser um outro ou ambos, 
+ou seja, o banco mostra um aluno do sexo masculino ou um aluno cuja idade seja maior/igual a 40, no melhor dos casos os dois dados --
+SELECT * FROM aluno WHERE idade BETWEEN 40 AND 60;
+-- seleciona todas as linhas em que a idade esteja entre 40 até 60, por exemplo: 54 anos --
+SELECT * FROM aluno WHERE nome LIKE '%n';
+-- retorna o aluno cujo nome tenha o caractere N a direita, irá resultar em Ellen --
+SELECT * FROM aluno WHERE nome LIKE 'e%';
+-- retorna o aluno cujo nome tenha o caractere E a esquerda --
+SELECT * FROM aluno WHERE nome LIKE '____n';
+-- retorna o aluno na qual esteja com a mesma quantidade de caracteres vazios e o caractere terminado em N --
+SELECT * FROM aluno WHERE nome LIKE 'e%_';
+-- retorna o aluno em que o caractere E esteja a esquerda e o restante vazio (_) --
+SELECT * FROM aluno order by nome ASC;
+-- irá retornar todos os nomes da tabela aluno de forma ascendente (A-Z) --
