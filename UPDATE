@@ -1,0 +1,5 @@
+-- exemplo de atualização de dados --
+UPDATE aluno SET valor_pago_curso = 450 WHERE nome = 'Ellen';
+-- atualiza a coluna da tabela aluno identificada pelo nome, o uso de WHERE é importante para identificar a linha correta,
+senão há o risco de atualizar todas as colunas do banco --
+UPDATE aluno SET telefone = '11 55555-5555' WHERE nome = 'Ellen';
